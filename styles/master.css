@@ -32,7 +32,7 @@ header {
   }
 }
 
-/*section-intro*/
+/*SECTION INTRO*/
 
 .intro {
   font-weight: 800;
@@ -86,4 +86,27 @@ header {
   .intro img {
     width: 661px;
   }
+}
+
+/*PERKS*/
+
+.perks {
+  font-weight: 800;
+}
+.perks img {
+  width:100%;
+}
+.perks ul{
+  padding: 0 16px 80px 16px;
+}
+.perks li {
+  color: #949494;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 16px 0 48px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.perks li em {
+  color: #000;
+  display: block;
 }

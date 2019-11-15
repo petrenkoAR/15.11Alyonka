@@ -1,6 +1,9 @@
 @import "reset.css";
 @import "fonts.css";
 
+:root {
+  --gray: #949494;
+}
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
@@ -58,8 +61,9 @@ header {
 .intro p {
   font-size: 20px;
   line-height: 28px;
-  color: #949494;
+  color: var(--gray);
   margin: 40px 0;
+  text-align: left;
 }
 .intro em{
   color: #000;
@@ -88,7 +92,7 @@ header {
   }
 }
 
-/*PERKS*/
+/*SECTION PERKS*/
 
 .perks {
   font-weight: 800;
@@ -100,7 +104,7 @@ header {
   padding: 0 16px 80px 16px;
 }
 .perks li {
-  color: #949494;
+  color: var(--gray);
   font-size: 20px;
   line-height: 28px;
   padding: 16px 0 48px;
@@ -109,4 +113,65 @@ header {
 .perks li em {
   color: #000;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .perks ul{
+    padding: 0 24px 128px 24px;
+  }
+  .perks li {
+    font-size: 36px;
+    line-height: 48px;
+    padding: 32px 0 88px;
+  }
+}
+
+/*SECTION ABOUT*/
+
+.about {
+  font-weight: 800;
+}
+.about h2 {
+  color: #000;
+  font-size: 40px;
+  line-height: 44px;
+  padding: 0 16px;
+  margin-bottom: 40px;
+}
+.about h2 em {
+  color: var(--gray);
+  display: block;
+}
+.about p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #000;
+  padding: 24px 16px 80px 16px;
+}
+.about p em {
+  color: var(--gray);
+}
+.about img {
+  min-width: 100%;
+}
+
+@media (min-width: 768px){
+  .about {
+    font-weight: 800;
+  }
+  .about h2 {
+    font-size: 80px;
+    line-height: 96px;
+    padding: 0 24px;
+    margin-bottom: 80px;
+  }
+  .about h2 em {
+    color: var(--gray);
+    display: block;
+  }
+  .about p {
+    font-size: 36px;
+    line-height: 48px;
+    padding: 32px 24px 128px 24px;
+  }
 }

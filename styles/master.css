@@ -45,10 +45,12 @@ header {
 .intro h1 {
   font-size: 20px;
   padding: 56px 0 8px;
+  animation:change-color 6s ease infinite;
 }
 .intro h2 {
   font-size: 40px;
   padding-bottom: 40px;
+  animation:change-color 6s ease infinite;
 }
 .intro h1,
 .intro h2,
@@ -223,6 +225,14 @@ header {
   padding: 14px 32px;
   margin: auto;
 }
+.btn {
+  transition: all 300ms ease-in-out;
+}
+.btn:hover {
+  color: #1B76FF;
+  background-color: #fff;
+  border: 1px solid #1B76FF;
+}
 
 @media (min-width: 768px){
   .shop h2{
@@ -287,6 +297,13 @@ footer p{
 
 @media (min-width: 768px){
   footer {
-    
+
+  }
+}
+
+
+@keyframes change-color {
+  50%{
+    color: red;
   }
 }
